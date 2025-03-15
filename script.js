@@ -7,7 +7,7 @@ function find(){
     if(city==""){
         alert("Please enter the name of the city");
     }
-    fetch(`http://api.weatherapi.com/v1/current.json?key=0ffa80165d60409797d184642251403&q=${city}&aqi=no`)
+    fetch(`https://api.weatherapi.com/v1/current.json?key=0ffa80165d60409797d184642251403&q=${city}&aqi=no`)
     .then(response=>{
         return response.json()
     }).then(data=>{
